@@ -15,3 +15,8 @@ jobs:
           command: "site"
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.GH_PAT }}
+          publish_dir: ./site/__sapper__/export
+          cname: status.brettspielfreunde.net

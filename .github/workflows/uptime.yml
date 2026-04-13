@@ -22,16 +22,6 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
       - uses: upptime/uptime-monitor@v1.37.0
         with:
-          command: "site"
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
-      - uses: upptime/uptime-monitor@v1.37.0
-        with:
-          command: "graphs"
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
-      - uses: upptime/uptime-monitor@v1.37.0
-        with:
           command: "response-time"
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
