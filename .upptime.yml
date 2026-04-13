@@ -1,0 +1,50 @@
+owner: two-dice
+repo: status
+
+sites:
+  - name: Frontend
+    url: https://brettspielfreunde.net
+    expectedStatusCodes:
+      - 200
+
+  - name: Auth (Keycloak)
+    url: https://auth.brettspielfreunde.net/realms/boardgame-platform/.well-known/openid-configuration
+    expectedStatusCodes:
+      - 200
+
+  - name: API Gateway
+    url: https://brettspielfreunde.net/api/health
+    expectedStatusCodes:
+      - 200
+
+status-website:
+  cname: status.brettspielfreunde.net
+  logoUrl: https://brettspielfreunde.net/logo.png
+  name: BrettspielFreunde Status
+  introTitle: "Systemstatus"
+  introMessage: "Aktuelle Verfügbarkeit der BrettspielFreunde-Plattform."
+  theme: light
+
+i18n:
+  activeIncidents: "Aktuelle Vorfälle"
+  pastIncidents: "Vergangene Vorfälle"
+  pastIncidentsResolved: "Behoben"
+  allSystemsOperational: "Alle Systeme laufen"
+  incidentReport: "Vorfallbericht"
+  liveStatus: "Livestatus"
+  overallUptime: "Gesamtverfügbarkeit"
+  responseTime: "Antwortzeit"
+  ms: "ms"
+  uptimePercentage: "Verfügbarkeit"
+  up: "Online"
+  down: "Offline"
+  degraded: "Eingeschränkt"
+
+workflowSchedule:
+  graphs: "0 0 * * *"
+  responseTime: "0 23 * * *"
+  staticSite: "0 1 * * *"
+  summary: "0 0 * * *"
+  updateTemplate: "0 0 * * *"
+  updates: "0 3 * * *"
+  uptime: "*/5 * * * *"
