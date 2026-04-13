@@ -4,11 +4,11 @@ Externe Verfügbarkeitsüberwachung der [BrettspielFreunde](https://brettspielfr
 
 ## Überwachte Endpoints
 
-| Name | URL |
-|------|-----|
-| Frontend | https://brettspielfreunde.net |
-| Auth (Keycloak) | https://auth.brettspielfreunde.net |
-| API Gateway | https://brettspielfreunde.net/api/health |
+| Name            | URL                                      |
+| --------------- | ---------------------------------------- |
+| Frontend        | https://brettspielfreunde.net            |
+| Auth (Keycloak) | https://auth.brettspielfreunde.net       |
+| API Gateway     | https://brettspielfreunde.net/api/health |
 
 ## Status Page
 
