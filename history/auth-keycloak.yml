@@ -1,7 +1,7 @@
 url: https://auth.brettspielfreunde.net/realms/boardgame-platform/.well-known/openid-configuration
 status: up
 code: 200
-responseTime: 698
-lastUpdated: 2026-04-24T10:04:03.364Z
+responseTime: 599
+lastUpdated: 2026-04-24T11:17:31.612Z
 startTime: 2026-04-13T11:52:52.591Z
 generator: Upptime <https://github.com/upptime/upptime>
