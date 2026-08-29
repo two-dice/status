@@ -12,7 +12,7 @@
     "uptimeYear": "100.00%",
     "time": 830,
     "timeDay": 757,
-    "timeWeek": 799,
+    "timeWeek": 801,
     "timeMonth": 805,
     "timeYear": 830,
     "dailyMinutesDown": {}
@@ -30,8 +30,8 @@
     "uptimeYear": "100.00%",
     "time": 542,
     "timeDay": 536,
-    "timeWeek": 533,
-    "timeMonth": 540,
+    "timeWeek": 535,
+    "timeMonth": 539,
     "timeYear": 542,
     "dailyMinutesDown": {}
   },
@@ -48,9 +48,27 @@
     "uptimeYear": "100.00%",
     "time": 357,
     "timeDay": 467,
-    "timeWeek": 504,
+    "timeWeek": 506,
     "timeMonth": 513,
     "timeYear": 357,
+    "dailyMinutesDown": {}
+  },
+  {
+    "name": "Alarmkette (Monitoring)",
+    "url": "https://brettspielfreunde.net/api/monitoring/watchdog",
+    "icon": "https://icons.duckduckgo.com/ip3/brettspielfreunde.net.ico",
+    "slug": "alarmkette-monitoring",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 613,
+    "timeDay": 613,
+    "timeWeek": 613,
+    "timeMonth": 613,
+    "timeYear": 613,
     "dailyMinutesDown": {}
   }
 ]
