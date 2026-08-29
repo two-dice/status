@@ -17,6 +17,17 @@ sites:
     expectedStatusCodes:
       - 200
 
+  # Dead-Man's-Switch fuer die Alarmkette (#696). Der Endpoint antwortet nur mit
+  # 200, solange der Alertmanager einen aktiven Watchdog-Alert haelt -- und das
+  # belegt beide Haelften: Prometheus wertet Regeln aus UND der Alertmanager
+  # empfaengt sie. Verstummt die Kette, faellt dieser Check hier auf, statt
+  # unbemerkt zu bleiben. Upptime laeuft auf GitHub Actions, der Beobachter
+  # sitzt also ausserhalb von Hetzner und ueberlebt den Ausfall, den er meldet.
+  - name: Alarmkette (Monitoring)
+    url: https://brettspielfreunde.net/api/monitoring/watchdog
+    expectedStatusCodes:
+      - 200
+
 status-website:
   cname: status.brettspielfreunde.net
   logoUrl: https://brettspielfreunde.net/logo.png
